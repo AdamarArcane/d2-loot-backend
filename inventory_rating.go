@@ -9,7 +9,7 @@ import (
 	"path/filepath"
 	"sort"
 
-	"github.com/adamararcane/d2optifarm/backend/cmd/constants"
+	"github.com/adamararcane/d2-loot-backend/cmd/constants"
 )
 
 // WeaponDefinition represents the structure of a weapon from the JSON file.

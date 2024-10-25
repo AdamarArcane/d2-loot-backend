@@ -13,7 +13,7 @@ import (
 	"github.com/joho/godotenv"
 	"golang.org/x/oauth2"
 
-	"github.com/adamararcane/d2optifarm/backend/internal/database"
+	"github.com/adamararcane/d2-loot-backend/internal/database"
 
 	_ "github.com/mattn/go-sqlite3"
 	_ "github.com/tursodatabase/libsql-client-go/libsql"

@@ -3,7 +3,7 @@ package main
 import (
 	"strings"
 
-	"github.com/adamararcane/d2optifarm/backend/cmd/constants"
+	"github.com/adamararcane/d2-loot-backend/cmd/constants"
 )
 
 // Helper function to get recommended perk names for a weapon

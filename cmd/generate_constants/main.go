@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"log"
 
-	"github.com/adamararcane/d2optifarm/backend/internal/generator"
+	"github.com/adamararcane/d2-loot-backend/internal/generator"
 )
 
 func main() {

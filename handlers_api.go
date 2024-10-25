@@ -8,7 +8,7 @@ import (
 	"net/http"
 	"time"
 
-	"github.com/adamararcane/d2optifarm/backend/internal/database"
+	"github.com/adamararcane/d2-loot-backend/internal/database"
 	"golang.org/x/oauth2"
 )
 
