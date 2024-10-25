@@ -107,7 +107,7 @@ func main() {
 	router := chi.NewRouter()
 
 	router.Use(cors.Handler(cors.Options{
-		AllowedOrigins:   []string{"https://localhost:5173"}, // Your frontend's origin
+		AllowedOrigins:   []string{"https://www.d2loot.com/"}, // Your frontend's origin
 		AllowedMethods:   []string{"GET", "POST", "OPTIONS"},
 		AllowedHeaders:   []string{"Content-Type", "Authorization"},
 		ExposedHeaders:   []string{"Link"},
@@ -119,7 +119,7 @@ func main() {
 	router.Get("/auth/callback", apiCfg.handleCallback)
 	router.Get("/api/user-data", apiCfg.userDataHandler)
 	router.Options("/api/user-data", func(w http.ResponseWriter, r *http.Request) {
-		w.Header().Set("Access-Control-Allow-Origin", "https://localhost:5173")
+		w.Header().Set("Access-Control-Allow-Origin", "https://www.d2loot.com/")
 		w.Header().Set("Access-Control-Allow-Methods", "GET, POST, OPTIONS")
 		w.Header().Set("Access-Control-Allow-Headers", "Content-Type, Authorization")
 		w.Header().Set("Access-Control-Allow-Credentials", "true")
