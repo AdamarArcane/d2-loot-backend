@@ -26,7 +26,7 @@ WORKDIR /app
 COPY --from=builder /app/d2-loot-backend .
 
 # Copy the JSON file into the final image (if needed at runtime)
-COPY --from=builder /app/cmd/generate_constants/yourfile.json ./cmd/generate_constants/yourfile.json
+COPY --from=builder /app/cmd/generate_constants/weapons_and_perks.json ./cmd/generate_constants/weapons_and_perks.json
 
 # Expose the port your application listens on (adjust if necessary)
 EXPOSE 8080
