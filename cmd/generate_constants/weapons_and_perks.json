@@ -1,0 +1,981 @@
+[
+  {
+    "weaponName": "VS Velocity Baton",
+    "desiredPerks": [
+      "Demolitionist",
+      "Attrition Orbs"
+    ],
+    "description": "Best orb generation of any weapon in the game",
+    "source": "Vesper's Host",
+    "bucket": "Orb Generation",
+    "rank": "1"
+  },
+  {
+    "weaponName": "Aberrant Action",
+    "desiredPerks": [
+      "Heal Clip",
+      "Incandescent"
+    ],
+    "description": "Best energy rocket sidearm",
+    "source": "Episode: Echoes",
+    "bucket": "Energy Rocket Sidearm",
+    "rank": "1"
+  },
+  {
+    "weaponName": "Tinasha's Mastery",
+    "desiredPerks": [
+      "Air Trigger",
+      "Chill Clip"
+    ],
+    "description": "Best kinetic rocket sidearm",
+    "source": "Iron Banner",
+    "bucket": "Kinetic Rocket Sidearm",
+    "rank": "1"
+  },
+  {
+    "weaponName": "The Call",
+    "desiredPerks": [
+      "Lead from Gold",
+      "One for All"
+    ],
+    "description": "Second best kinetic rocket sidearm",
+    "source": "The Pale Heart",
+    "bucket": "Kinetic Rocket Sidearm",
+    "rank": "2"
+  },
+  {
+    "weaponName": "Indebted Kindness",
+    "desiredPerks": [
+      "Lead from Gold",
+      "Voltshot"
+    ],
+    "description": "Second best energy rocket sidearm",
+    "source": "Warlord's Ruin",
+    "bucket": "Energy Rocket Sidearm",
+    "rank": "2"
+  },
+  {
+    "weaponName": "VS Chill Inhibitor",
+    "desiredPerks": [
+      "Envious Arsenal",
+      "Bait and Switch"
+    ],
+    "description": "Best DPS heavy grenade launcher",
+    "source": "Vesper's Host",
+    "bucket": "DPS Heavy Grenade Launcher",
+    "rank": "1"
+  },
+  {
+    "weaponName": "Bitter/Sweet",
+    "desiredPerks": [
+      "Envious Arsenal",
+      "Bait and Switch"
+    ],
+    "description": "Best arc DPS heavy grenade launcher",
+    "source": "Episode: Revenant",
+    "bucket": "DPS Heavy Grenade Launcher",
+    "rank": "2"
+  },
+  {
+    "weaponName": "Wicked Sister",
+    "desiredPerks": [
+      "Envious Arsenal",
+      "Bait and Switch"
+    ],
+    "description": "Best strand DPS heavy grenade launcher",
+    "source": "Vangaurd Ops",
+    "bucket": "DPS Heavy Grenade Launcher",
+    "rank": "3"
+  },
+  {
+    "weaponName": "Edge Transit",
+    "desiredPerks": [
+      "Envious Assassin",
+      "Bait and Switch"
+    ],
+    "description": "Best void DPS heavy grenade launcher",
+    "source": "Onslaught",
+    "bucket": "DPS Heavy Grenade Launcher",
+    "rank": "4"
+  },
+  {
+    "weaponName": "Gjallarhorn",
+    "desiredPerks": [
+      "Pack Hunter",
+      "Wolfpack Rounds"
+    ],
+    "description": "Best exotic add clear heavy",
+    "source": "Fly out the Wolves Quest",
+    "bucket": "Exotic Add Clear",
+    "rank": "1"
+  },
+  {
+    "weaponName": "Forbearance",
+    "desiredPerks": [
+      "Ambitious Assassin",
+      "Chain Reaction"
+    ],
+    "description": "Excellent energy add clear grenade launcher",
+    "source": "Onslaught",
+    "bucket": "Energy Wave-Frame",
+    "rank": "2"
+  },
+  {
+    "weaponName": "IKELOS_SG_v1.0.3",
+    "desiredPerks": [
+      "Grave Robber",
+      "One-Two Punch"
+    ],
+    "description": "Best energy One-Two Punch shotgun",
+    "source": "Operation: Seraph's Shield",
+    "bucket": "Energy One-Two Punch",
+    "rank": "1"
+  },
+  {
+    "weaponName": "Midnight Coup",
+    "desiredPerks": [
+      "Firefly",
+      "Frenzy"
+    ],
+    "description": "Excellent kinetic primary",
+    "source": "Onslaught",
+    "bucket": "Kinetic Primary",
+    "rank": "3"
+  },
+  {
+    "weaponName": "The Mountaintop",
+    "desiredPerks": [
+      "Auto-Loading Holster",
+      "Frenzy"
+    ],
+    "description": "Best movement grenade launcher",
+    "source": "Onslaught",
+    "bucket": "Movement Grenade Launcher",
+    "rank": "1"
+  },
+  {
+    "weaponName": "Alethonym",
+    "desiredPerks": [
+      "Harvester Spike",
+      "Vestigial Alchemy"
+    ],
+    "description": "Second best movement grenade launcher",
+    "source": "Episode: Revenant",
+    "bucket": "Movement Grenade Launcher",
+    "rank": "2"
+  },
+  {
+    "weaponName": "Sunshot",
+    "desiredPerks": [
+      "Sun Blast",
+      "Sunburn"
+    ],
+    "description": "Best exotic energy primary",
+    "source": "Exotic Engram",
+    "bucket": "Exotic Energy Primary",
+    "rank": "1"
+  },
+  {
+    "weaponName": "Graviton Lance",
+    "desiredPerks": [
+      "Cosmology",
+      "Black Hole"
+    ],
+    "description": "Second best exotic energy primary",
+    "source": "Exotic Engram",
+    "bucket": "Exotic Energy Primary",
+    "rank": "2"
+  },
+  {
+    "weaponName": "Trinity Ghoul",
+    "desiredPerks": [
+      "Lightning Rod",
+      "Split Electron"
+    ],
+    "description": "Very good exotic energy primary",
+    "source": "Exotic Engram",
+    "bucket": "Exotic Energy Primary",
+    "rank": "3"
+  },
+  {
+    "weaponName": "Leviathan's Breath",
+    "desiredPerks": [
+      "Leviathan's Sigh",
+      "Big-Game Hunter"
+    ],
+    "description": "Best consistent exotic heavy damage",
+    "source": "Exotic Archive",
+    "bucket": "Exotic DPS (Consistent)",
+    "rank": "1"
+  },
+  {
+    "weaponName": "One Thousand Voices",
+    "desiredPerks": [
+      "Unforeseen Repercussions",
+      "Ahamkara's Eye"
+    ],
+    "description": "Excellent consistent exotic heavy damage",
+    "source": "Last Wish",
+    "bucket": "Exotic DPS (Consistent)",
+    "rank": "2"
+  },
+  {
+    "weaponName": "The Prospector",
+    "desiredPerks": [
+      "Full Auto Trigger System",
+      "Excavation"
+    ],
+    "description": "Excellent consistent exotic heavy damage",
+    "source": "Exotic Engram",
+    "bucket": "Exotic DPS (Consistent)",
+    "rank": "3"
+  },
+  {
+    "weaponName": "Microcosm",
+    "desiredPerks": [
+      "Paracausal Imbuement",
+      "Paracausal Beam"
+    ],
+    "description": "Excellent consistent exotic heavy damage",
+    "source": "The Pale Heart",
+    "bucket": "Exotic DPS (Consistent)",
+    "rank": "4"
+  },
+  {
+    "weaponName": "Whisper of the Worm",
+    "desiredPerks": [
+      "White Nail",
+      "Whispered Breathing"
+    ],
+    "description": "Best exotic heavy for total damage",
+    "source": "The Whisper",
+    "bucket": "Exotic DPS (Total Damage)",
+    "rank": "1"
+  },
+  {
+    "weaponName": "Grand Overture",
+    "desiredPerks": [
+      "Omega Strike",
+      "Wrath of the Colossus"
+    ],
+    "description": "Excellent exotic heavy for total damage",
+    "source": "Exotic Archive",
+    "bucket": "Exotic DPS (Total Damage)",
+    "rank": "2"
+  },
+  {
+    "weaponName": "Legend of Acrius",
+    "desiredPerks": [
+      "Long March",
+      "Shock Blast"
+    ],
+    "description": "Excellent exotic heavy for total damage",
+    "source": "Exotic Archive",
+    "bucket": "Exotic DPS (Total Damage)",
+    "rank": "3"
+  },
+  {
+    "weaponName": "Tractor Cannon",
+    "desiredPerks": [
+      "The Scientific Method",
+      "Repulsor Force"
+    ],
+    "description": "Best exotic debuff",
+    "source": "Exotic Engram",
+    "bucket": "Exotic Debuff",
+    "rank": "1"
+  },
+  {
+    "weaponName": "Divinity",
+    "desiredPerks": [
+      "Penance",
+      "Judgment"
+    ],
+    "description": "Situational exotic debuff",
+    "source": "Garden of Salvation",
+    "bucket": "Exotic Debuff",
+    "rank": "3"
+  },
+  {
+    "weaponName": "No Hesitation",
+    "desiredPerks": [
+      "Physic",
+      "Incandescent"
+    ],
+    "description": "Only support auto-rifle",
+    "source": "The Pale Heart",
+    "bucket": "Team Support Weapon",
+    "rank": "1"
+  },
+  {
+    "weaponName": "Ergo Sum",
+    "desiredPerks": [
+      "Arc Conductor",
+      "Transcendent Duelist"
+    ],
+    "description": "Best exotic add clear with damage resistance",
+    "source": "The Pale Heart",
+    "bucket": "Add Clear with Damage Resistance",
+    "rank": "1"
+  },
+  {
+    "weaponName": "Riskrunner",
+    "desiredPerks": [
+      "Arc Conductor",
+      "Superconductor"
+    ],
+    "description": "Easily obtainable add clear with damage resistance",
+    "source": "Exotic Engram",
+    "bucket": "Add Clear with Damage Resistance",
+    "rank": "3"
+  },
+  {
+    "weaponName": "Perfect Paradox",
+    "desiredPerks": [
+      "Field Prep",
+      "One-Two Punch"
+    ],
+    "description": "Best kinetic One-Two Punch shotgun",
+    "source": "Episode: Echoes",
+    "bucket": "Kinetic One-Two Punch",
+    "rank": "1"
+  },
+  {
+    "weaponName": "Wastelander M5",
+    "desiredPerks": [
+      "Lead from Gold",
+      "One-Two Punch"
+    ],
+    "description": "Excellent kinetic One-Two Punch shotgun",
+    "source": "Dares of Eternity",
+    "bucket": "Kinetic One-Two Punch",
+    "rank": "2"
+  },
+  {
+    "weaponName": "Veleda-F",
+    "desiredPerks": [
+      "Air Trigger",
+      "Withering Gaze"
+    ],
+    "description": "Best weaken on demand from legendary weapon",
+    "source": "World Drop",
+    "bucket": "Weaken on Demand",
+    "rank": "1"
+  },
+  {
+    "weaponName": "Sovereignty",
+    "desiredPerks": [
+      "Demolitionist",
+      "Withering Gaze"
+    ],
+    "description": "Excellent weaken on demand from legendary weapon",
+    "source": "Episode: Revenant",
+    "bucket": "Weaken on Demand",
+    "rank": "2"
+  },
+  {
+    "weaponName": "Critical Anomaly",
+    "desiredPerks": [
+      "Chill Clip",
+      "Chaos Reshaped"
+    ],
+    "description": "Best hitscan overload stun",
+    "source": "Salvation's Edge",
+    "bucket": "Hitscan Overload Stun",
+    "rank": "1"
+  },
+  {
+    "weaponName": "The Supremacy",
+    "desiredPerks": [
+      "Rewind Rounds",
+      "Kinetic Tremors"
+    ],
+    "description": "Best kinetic damage sniper",
+    "source": "Last Wish",
+    "bucket": "Kinetic Sniper",
+    "rank": "1"
+  },
+  {
+    "weaponName": "Irukandji",
+    "desiredPerks": [
+      "Fourth Time's the Charm",
+      "Firing Line"
+    ],
+    "description": "Best kinetic damage sniper",
+    "source": "Last Wish",
+    "bucket": "Kinetic Sniper",
+    "rank": "2"
+  },
+  {
+    "weaponName": "Lost Signal",
+    "desiredPerks": [
+      "Auto-Loading Holster",
+      "Vorpal Weapon"
+    ],
+    "description": "Best darkness transcendence generation weapon",
+    "source": "Episode: Echoes",
+    "bucket": "Transcendance Generation",
+    "rank": "1"
+  },
+  {
+    "weaponName": "Pro Memoria",
+    "desiredPerks": [
+      "Demolitionist",
+      "Desperate Measures"
+    ],
+    "description": "Excellent add clear machine gun",
+    "source": "The Pale Heart",
+    "bucket": "Machine Gun",
+    "rank": "1"
+  },
+  {
+    "weaponName": "Commemoration",
+    "desiredPerks": [
+      "Reconstruction",
+      "Killing Tally"
+    ],
+    "description": "Excellent add clear machine gun",
+    "source": "Deep Stone Crypt",
+    "bucket": "Machine Gun",
+    "rank": "2"
+  },
+  {
+    "weaponName": "Song of Ir Yût",
+    "desiredPerks": [
+      "Demolitionist",
+      "Sword Logic"
+    ],
+    "description": "Excellent add clear machine gun",
+    "source": "Crota's End",
+    "bucket": "Machine Gun",
+    "rank": "3"
+  },
+  {
+    "weaponName": "The Slammer",
+    "desiredPerks": [
+      "Eager Edge",
+      "Cold Steel"
+    ],
+    "description": "Excellent movement sword",
+    "source": "Nightfall Strikes",
+    "bucket": "Movement Sword",
+    "rank": "2"
+  },
+  {
+    "weaponName": "Falling Guillotine",
+    "desiredPerks": [
+      "Eager Edge",
+      "Chain Reaction"
+    ],
+    "description": "Best movement sword",
+    "source": "Onslaught",
+    "bucket": "Movement Sword",
+    "rank": "1"
+  },
+  {
+    "weaponName": "Heliocentric QSc",
+    "desiredPerks": [
+      "Heal Clip",
+      "Incandescent"
+    ],
+    "description": "Excellent energy primary",
+    "source": "World Drop",
+    "bucket": "Energy Primary",
+    "rank": "1"
+  },
+  {
+    "weaponName": "Anonymous Autumn",
+    "desiredPerks": [
+      "Eddy Current",
+      "Voltshot"
+    ],
+    "description": "Excellent energy primary",
+    "source": "Crucible",
+    "bucket": "Energy Primary",
+    "rank": "2"
+  },
+  {
+    "weaponName": "Nullify",
+    "desiredPerks": [
+      "Firefly",
+      "Incandescent"
+    ],
+    "description": "Excellent energy primary",
+    "source": "Salvation's Edge",
+    "bucket": "Energy Primary",
+    "rank": "3"
+  },
+  {
+    "weaponName": "Parasite",
+    "desiredPerks": [
+      "Worm Byproduct",
+      "Worm's Hunger"
+    ],
+    "description": "Best exotic heavy burst option",
+    "source": "Of Queens and Worms",
+    "bucket": "Exotic Heavy Burst",
+    "rank": "1"
+  },
+  {
+    "weaponName": "The Wardcliff Coil",
+    "desiredPerks": [
+      "Mechanized Autoloader",
+      "Mad Scientist"
+    ],
+    "description": "Excellent exotic heavy burst option",
+    "source": "Exotic Engram",
+    "bucket": "Exotic Heavy Burst",
+    "rank": "2"
+  },
+  {
+    "weaponName": "Xenophage",
+    "desiredPerks": [
+      "Rangefinder",
+      "Pyrotoxin Rounds"
+    ],
+    "description": "Excellent exotic add clear heavy",
+    "source": "The Journey",
+    "bucket": "Exotic Add Clear",
+    "rank": "2"
+  },
+  {
+    "weaponName": "Thunderlord",
+    "desiredPerks": [
+      "Lightning Rounds",
+      "Reign Havoc"
+    ],
+    "description": "Excellent exotic add clear heavy",
+    "source": "Exotic Engram",
+    "bucket": "Exotic Add Clear",
+    "rank": "3"
+  },
+  {
+    "weaponName": "Outbreak Perfected",
+    "desiredPerks": [
+      "Parasitism",
+      "Rewind Rounds"
+    ],
+    "description": "Best ammoless damage",
+    "source": "Zero Hour",
+    "bucket": "Ammoless DPS",
+    "rank": "1"
+  },
+  {
+    "weaponName": "Dead Weight",
+    "desiredPerks": [
+      "Grave Robber",
+      "One-Two Punch"
+    ],
+    "description": "Excellent energy One-Two Punch shotgun",
+    "source": "Gambit",
+    "bucket": "Energy One-Two Punch",
+    "rank": "2"
+  },
+  {
+    "weaponName": "Heritage",
+    "desiredPerks": [
+      "Reconstruction",
+      "Recombination"
+    ],
+    "description": "Best kinetic burst damage shotgun",
+    "source": "Deep Stone Crypt",
+    "bucket": "Kinetic Burst Damage",
+    "rank": "1"
+  },
+  {
+    "weaponName": "Omniscient Eye",
+    "desiredPerks": [
+      "Fourth Time's the Charm",
+      "Precision Instrument"
+    ],
+    "description": "Best energy damage sniper",
+    "source": "Garden of Salvation",
+    "bucket": "Energy Damage Sniper",
+    "rank": "1"
+  },
+  {
+    "weaponName": "IKELOS_SR_V1.0.3",
+    "desiredPerks": [
+      "Fourth Time's the Charm",
+      "Focused Fury"
+    ],
+    "description": "Excellent energy damage sniper",
+    "source": "Operation: Seraph's Shield",
+    "bucket": "Energy Damage Sniper",
+    "rank": "2"
+  },
+  {
+    "weaponName": "Scatter Signal",
+    "desiredPerks": [
+      "Overflow",
+      "Controlled Burst"
+    ],
+    "description": "Best kinetic damage fusion",
+    "source": "Season of the Wish",
+    "bucket": "Kinetic Fusion",
+    "rank": "1"
+  },
+  {
+    "weaponName": "Zealot's Reward",
+    "desiredPerks": [
+      "Auto-Loading Holster",
+      "Controlled Burst"
+    ],
+    "description": "Best energy damage fusion",
+    "source": "Garden of Salvation",
+    "bucket": "Energy Fusion",
+    "rank": "1"
+  },
+  {
+    "weaponName": "Martyr's Retribution",
+    "desiredPerks": [
+      "Heal Clip",
+      "Incandescent"
+    ],
+    "description": "Best energy add clear grenade launcher",
+    "source": "Episode: Echoes",
+    "bucket": "Energy Wave-Frame",
+    "rank": "1"
+  },
+  {
+    "weaponName": "Tusk of the Boar",
+    "desiredPerks": [
+      "Slideways",
+      "Chain Reaction"
+    ],
+    "description": "Best kinetic add clear grenade launcher",
+    "source": "Iron Banner",
+    "bucket": "Kinetic Wave-Frame",
+    "rank": "1"
+  },
+  {
+    "weaponName": "Liturgy",
+    "desiredPerks": [
+      "Slideways",
+      "Disorienting Grenades"
+    ],
+    "description": "Best kinetic blinding grenade launcher",
+    "source": "Episode: Revenant",
+    "bucket": "Kinetic Blind",
+    "rank": "1"
+  },
+  {
+    "weaponName": "Wilderflight",
+    "desiredPerks": [
+      "Auto-Loading Holster",
+      "Disorienting Grenades"
+    ],
+    "description": "Best energy blinding grenade launcher",
+    "source": "Spire of the Watcher",
+    "bucket": "Energy Blind",
+    "rank": "1"
+  },
+  {
+    "weaponName": "Rake Angle",
+    "desiredPerks": [
+      "Impulse Amplifier",
+      "Chill Clip"
+    ],
+    "description": "Best glaive",
+    "source": "Nightfall Strikes",
+    "bucket": "Glaive",
+    "rank": "1"
+  },
+  {
+    "weaponName": "Chronophage",
+    "desiredPerks": [
+      "Shoot to Loot",
+      "Destabilizing Rounds"
+    ],
+    "description": "Best enegry trace rifle",
+    "source": "Episode: Echoes",
+    "bucket": "Energy Trace",
+    "rank": "1"
+  },
+  {
+    "weaponName": "Summum Bonum",
+    "desiredPerks": [
+      "Relentless Strikes",
+      "Chaos Reshaped"
+    ],
+    "description": "Best DPS sword",
+    "source": "Salvation's Edge",
+    "bucket": "DPS Sword",
+    "rank": "1"
+  },
+  {
+    "weaponName": "Geodetic HSm",
+    "desiredPerks": [
+      "Relentless Strikes",
+      "Whirlwind Blade"
+    ],
+    "description": "Excellent DPS sword",
+    "source": "World Drop",
+    "bucket": "DPS Sword",
+    "rank": "4"
+  },
+  {
+    "weaponName": "Ill Omen",
+    "desiredPerks": [
+      "Relentless Strikes",
+      "Whirlwind Blade"
+    ],
+    "description": "Excellent DPS sword",
+    "source": "Episode: Echoes",
+    "bucket": "DPS Sword",
+    "rank": "2"
+  },
+  {
+    "weaponName": "Bequest",
+    "desiredPerks": [
+      "Relentless Strikes",
+      "Surrounded"
+    ],
+    "description": "Excellent DPS sword when surrounded",
+    "source": "Deep Stone Crypt",
+    "bucket": "DPS Sword",
+    "rank": "3"
+  },
+  {
+    "weaponName": "Tomorrow's Answer",
+    "desiredPerks": [
+      "Envious Arsenal",
+      "Bait and Switch"
+    ],
+    "description": "Best DPS rocket launcher",
+    "source": "Trials of Osiris",
+    "bucket": "DPS Rocket",
+    "rank": "1"
+  },
+  {
+    "weaponName": "Apex Predator",
+    "desiredPerks": [
+      "Reconstruction",
+      "Bait and Switch"
+    ],
+    "description": "Excellent DPS rocket launcher",
+    "source": "Last Wish",
+    "bucket": "DPS Rocket",
+    "rank": "2"
+  },
+  {
+    "weaponName": "Crux Termination IV",
+    "desiredPerks": [
+      "Reconstruction",
+      "Bipod"
+    ],
+    "description": "Excellent DPS rocket launcher",
+    "source": "World Drop",
+    "bucket": "DPS Rocket",
+    "rank": "3"
+  },
+  {
+    "weaponName": "Scintillation",
+    "desiredPerks": [
+      "Rewind Rounds",
+      "Bait and Switch"
+    ],
+    "description": "Best DPS linear fusion rifle",
+    "source": "Nightfall Strikes",
+    "bucket": "Linear",
+    "rank": "1"
+  },
+  {
+    "weaponName": "Doomed Petitioner",
+    "desiredPerks": [
+      "Envious Assassin",
+      "Precision Instrument"
+    ],
+    "description": "Excellent DPS linear fusion rifle",
+    "source": "Season of the Wish",
+    "bucket": "Linear",
+    "rank": "2"
+  },
+  {
+    "weaponName": "Multimach CCX",
+    "desiredPerks": [
+      "Attrition Orbs",
+      "Kinetic Tremors"
+    ],
+    "description": "Best kinetic primary",
+    "source": "Iron Banner",
+    "bucket": "Kinetic Primary",
+    "rank": "1"
+  },
+  {
+    "weaponName": "Imminence",
+    "desiredPerks": [
+      "Enlightened Action",
+      "Chaos Reshaped"
+    ],
+    "description": "Excellent kinetic primary",
+    "source": "Salvation's Edge",
+    "bucket": "Kinetic Primary",
+    "rank": "2"
+  },
+  {
+    "weaponName": "Warden's Law",
+    "desiredPerks": [
+      "Demolitionist",
+      "Vorpal Weapon"
+    ],
+    "description": "Best kinetic hand cannon for lucky pants",
+    "source": "Nightfall Strikes",
+    "bucket": "Kinetic Hand Cannon (Lucky Pants)",
+    "rank": "1"
+  },
+  {
+    "weaponName": "Yesterday's Question",
+    "desiredPerks": [
+      "Rapid Hit",
+      "Vorpal Weapon"
+    ],
+    "description": "Best energy hand cannon for Lucky Pants",
+    "source": "Trials of Osiris",
+    "bucket": "Energy Hand Cannon (Lucky Pants)",
+    "rank": "1"
+  },
+  {
+    "weaponName": "Maahes HC4",
+    "desiredPerks": [
+      "Enlightened Action",
+      "Frenzy"
+    ],
+    "description": "Excellent energy hand cannon for Lucky Pants",
+    "source": "World Drop",
+    "bucket": "Energy Hand Cannon (Lucky Pants)",
+    "rank": "2"
+  },
+  {
+    "weaponName": "Khvostov 7G-0X",
+    "desiredPerks": [
+      "The Right Choice",
+      "Eyes Up, Guardian"
+    ],
+    "description": "Best exotic kinetic primary weapon for add clear",
+    "source": "The Pale Heart",
+    "bucket": "Exotic Kinetic Primary",
+    "rank": "1"
+  },
+  {
+    "weaponName": "Necrochasm",
+    "desiredPerks": [
+      "Desperation",
+      "Cursebringer"
+    ],
+    "description": "Excellent exotic kinetic primary weapon for add clear",
+    "source": "Crota's End",
+    "bucket": "Exotic Kinetic Primary",
+    "rank": "2"
+  },
+  {
+    "weaponName": "Bad Juju",
+    "desiredPerks": [
+      "Hip-Fire Grip",
+      "String of Curses"
+    ],
+    "description": "Best exotic kinetic primary weapon for super generation",
+    "source": "Exotic Archive",
+    "bucket": "Super Generation",
+    "rank": "1"
+  },
+  {
+    "weaponName": "The Huckleberry",
+    "desiredPerks": [
+      "Rampage",
+      "Ride the Bull"
+    ],
+    "description": "Best exotic kinetic primary weapon for Peacekeepers",
+    "source": "Exotic Engram",
+    "bucket": "Kinetic SMG (Peacekeepers)",
+    "rank": "1"
+  },
+  {
+    "weaponName": "The Fourth Horseman",
+    "desiredPerks": [
+      "Broadside",
+      "Thunderer"
+    ],
+    "description": "Excellent exotic energy weapon for burst damage",
+    "source": "Exotic Archive",
+    "bucket": "Exotic Energy Burst",
+    "rank": "1"
+  },
+  {
+    "weaponName": "Choir of One",
+    "desiredPerks": [
+      "Command Frame",
+      "Command Frame"
+    ],
+    "description": "Excellent exotic energy weapon for burst damage",
+    "source": "Encore",
+    "bucket": "Exotic Energy Burst",
+    "rank": "2"
+  },
+  {
+    "weaponName": "Still Hunt",
+    "desiredPerks": [
+      "Sharpshooter",
+      "Cayde's Retribution"
+    ],
+    "description": "Excellent exotic energy weapon for burst damage",
+    "source": "Wild Card Exotic Mission",
+    "bucket": "Exotic Energy Burst",
+    "rank": "3"
+  },
+  {
+    "weaponName": "Izanagi's Burden",
+    "desiredPerks": [
+      "No Distractions",
+      "Honed Edge"
+    ],
+    "description": "Excellent exotic energy weapon for burst damage",
+    "source": "Exotic Archive",
+    "bucket": "Exotic Energy Burst",
+    "rank": "4"
+  },
+  {
+    "weaponName": "Buried Bloodline",
+    "desiredPerks": [
+      "Violent Reanimation",
+      "Hungering Quarrel"
+    ],
+    "description": "Best exotic for survivability",
+    "source": "Warlord's Ruin",
+    "bucket": "Survivability",
+    "rank": "1"
+  },
+  {
+    "weaponName": "Red Death Reformed",
+    "desiredPerks": [
+      "Redemption",
+      "Inverse Relationship"
+    ],
+    "description": "Excellent exotic for survivability",
+    "source": "Exotic Archive",
+    "bucket": "Survivability",
+    "rank": "2"
+  },
+  {
+    "weaponName": "Euphony",
+    "desiredPerks": [
+      "Unwound",
+      "Spindle"
+    ],
+    "description": "Excellent exotic special weapon for total damage",
+    "source": "Salvation's Edge",
+    "bucket": "Exotic Special DPS (Total)",
+    "rank": "1"
+  },
+  {
+    "weaponName": "Cloudstrike",
+    "desiredPerks": [
+      "Stormbringer",
+      "Mortal Polarity"
+    ],
+    "description": "Excellent exotic special weapon for total damage",
+    "source": "Exotic Engram",
+    "bucket": "Exotic Special DPS (Total)",
+    "rank": "2"
+  }
+]
