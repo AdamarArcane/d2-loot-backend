@@ -1,3 +1,5 @@
+// +heroku goVersion go1.23.1
+
 module github.com/adamararcane/d2-loot-backend
 
 go 1.23.1
