@@ -191,7 +191,7 @@ func (api *apiConfig) userDataHandler(w http.ResponseWriter, r *http.Request) {
 
 	// Set CORS headers (adjust as needed)
 	origin := r.Header.Get("Origin")
-	if origin == "https://localhost:5173" {
+	if origin == "https://www.d2loot.com" {
 		w.Header().Set("Access-Control-Allow-Origin", origin)
 	} else {
 		http.Error(w, "Unauthorized origin", http.StatusUnauthorized)
