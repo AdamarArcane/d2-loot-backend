@@ -104,7 +104,7 @@ func (api *apiConfig) handleCallback(w http.ResponseWriter, r *http.Request) {
 	}
 
 	// Redirect the user back to the frontend
-	http.Redirect(w, r, "https://localhost:5173/dashboard", http.StatusFound)
+	http.Redirect(w, r, "https://www.d2loot.com/dashboard", http.StatusFound)
 }
 
 func (api *apiConfig) userDataHandler(w http.ResponseWriter, r *http.Request) {
