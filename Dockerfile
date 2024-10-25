@@ -13,13 +13,6 @@ RUN go mod download
 # Copy the rest of your application's source code
 COPY . .
 
-# Generate constants (if needed during build)
-RUN go run cd cmd/generate_constants
-
-RUN go run main.go
-
-RUN cd ../..
-
 # Build the Go application
 RUN go build -o d2-loot-backend .
 
@@ -33,7 +26,7 @@ WORKDIR /app
 COPY --from=builder /app/d2-loot-backend .
 
 # Copy the JSON file into the final image (if needed at runtime)
-COPY --from=builder /app/cmd/generate_constants/weapons_and_perks.json ./cmd/generate_constants/weapons_and_perks.json
+COPY --from=builder /app/cmd/generate_constants/yourfile.json ./cmd/generate_constants/yourfile.json
 
 # Expose the port your application listens on (adjust if necessary)
 EXPOSE 8080
