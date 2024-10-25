@@ -1,17 +1,22 @@
-# Use a minimal base image
-FROM alpine:latest
+# Build Stage
+FROM golang:1.23.1-alpine AS builder
 
-# Set the working directory inside the container
 WORKDIR /app
 
-# Copy the pre-compiled binary into the container
-COPY d2-loot-backend .
+COPY go.mod go.sum ./
+RUN go mod download
 
-# Ensure the binary is executable
-RUN chmod +x d2-loot-backend
+COPY . .
 
-# Expose the port your application listens on (adjust if necessary)
+RUN go build -o d2-loot-backend .
+
+# Run Stage
+FROM alpine:latest
+
+WORKDIR /app
+
+COPY --from=builder /app/d2-loot-backend .
+
 EXPOSE 8080
 
-# Command to run the application
 CMD ["./d2-loot-backend"]
