@@ -91,6 +91,7 @@ func main() {
 
 	// Set session options for security
 	store.Options = &sessions.Options{
+		Domain:   ".d2loot.com",
 		Path:     "/",
 		MaxAge:   86400 * 7,             // 7 days
 		HttpOnly: true,                  // Prevents JS access to cookies
@@ -115,16 +116,16 @@ func main() {
 		MaxAge:           300,
 	}))
 	router.Get("/", handleMain)
-	router.Get("/auth/login", handleLogin)
-	router.Get("/auth/callback", apiCfg.handleCallback)
-	router.Get("/api/user-data", apiCfg.userDataHandler)
-	router.Options("/api/user-data", func(w http.ResponseWriter, r *http.Request) {
+	router.Get("/login", handleLogin)
+	router.Get("/callback", apiCfg.handleCallback)
+	router.Get("/user-data", apiCfg.userDataHandler)
+	/*router.Options("/user-data", func(w http.ResponseWriter, r *http.Request) {
 		w.Header().Set("Access-Control-Allow-Origin", "https://www.d2loot.com/")
 		w.Header().Set("Access-Control-Allow-Methods", "GET, POST, OPTIONS")
 		w.Header().Set("Access-Control-Allow-Headers", "Content-Type, Authorization")
 		w.Header().Set("Access-Control-Allow-Credentials", "true")
 		w.WriteHeader(http.StatusNoContent)
-	})
+	})*/
 	router.Post("/api/logout", apiCfg.logoutHandler)
 
 	srv := &http.Server{

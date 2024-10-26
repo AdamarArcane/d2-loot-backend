@@ -121,7 +121,7 @@ func (api *apiConfig) userDataHandler(w http.ResponseWriter, r *http.Request) {
 		http.Error(w, "User not authenticated", http.StatusUnauthorized)
 		return
 	}
-	userID, ok := userIDInterface.(int64) // Adjust type based on your ID type
+	userID, ok := userIDInterface.(int64)
 	if !ok {
 		http.Error(w, "Invalid user ID in session", http.StatusInternalServerError)
 		return
@@ -191,15 +191,15 @@ func (api *apiConfig) userDataHandler(w http.ResponseWriter, r *http.Request) {
 
 	// Set CORS headers (adjust as needed)
 	origin := r.Header.Get("Origin")
-	if origin == "https://www.d2loot.com" {
+	if origin == "https://d2loot.com" || origin == "https://www.d2loot.com" {
 		w.Header().Set("Access-Control-Allow-Origin", origin)
+		w.Header().Set("Access-Control-Allow-Credentials", "true")
+		w.Header().Set("Access-Control-Allow-Headers", "Content-Type")
+		w.Header().Set("Access-Control-Allow-Methods", "GET, POST, OPTIONS")
 	} else {
 		http.Error(w, "Unauthorized origin", http.StatusUnauthorized)
 		return
 	}
-
-	w.Header().Set("Access-Control-Allow-Credentials", "true")
-	w.Header().Set("Content-Type", "application/json")
 
 	if r.Method == "OPTIONS" {
 		w.WriteHeader(http.StatusNoContent)
