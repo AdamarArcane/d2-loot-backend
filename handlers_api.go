@@ -255,6 +255,17 @@ func (api *apiConfig) logoutHandler(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 
+	origin := r.Header.Get("Origin")
+	if origin == "https://"+api.FRONTEND_DOMAIN || origin == "https://www."+api.FRONTEND_DOMAIN {
+		w.Header().Set("Access-Control-Allow-Origin", origin)
+		w.Header().Set("Access-Control-Allow-Credentials", "true")
+		w.Header().Set("Access-Control-Allow-Headers", "Content-Type")
+		w.Header().Set("Access-Control-Allow-Methods", "GET, POST, OPTIONS")
+	} else {
+		http.Error(w, "Unauthorized origin", http.StatusUnauthorized)
+		return
+	}
+
 	// Send a success response or redirect the user
 	w.Header().Set("Content-Type", "application/json")
 	w.WriteHeader(http.StatusOK)
