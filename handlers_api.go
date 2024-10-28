@@ -215,46 +215,7 @@ func (api *apiConfig) userDataHandler(w http.ResponseWriter, r *http.Request) {
 }
 
 func (api *apiConfig) logoutHandler(w http.ResponseWriter, r *http.Request) {
-	// Get the session
-	session, err := store.Get(r, "session-name")
-	if err != nil {
-		http.Error(w, "Failed to get session: "+err.Error(), http.StatusInternalServerError)
-		return
-	}
-
-	// Get the user ID from the session
-	userIDInterface, ok := session.Values["userID"]
-	if !ok {
-		// Session doesn't contain user ID; consider the user already logged out
-		http.Error(w, "User not authenticated", http.StatusUnauthorized)
-		return
-	}
-	userID, ok := userIDInterface.(int64)
-	if !ok {
-		http.Error(w, "Invalid user ID in session", http.StatusInternalServerError)
-		return
-	}
-
-	// Optionally, delete or invalidate the user's tokens in the database
-	err = api.DB.DeleteAuthTokens(context.Background(), userID)
-	if err != nil {
-		http.Error(w, "Failed to delete tokens: "+err.Error(), http.StatusInternalServerError)
-		return
-	}
-
-	// Invalidate the session by clearing its values
-	session.Values = make(map[interface{}]interface{})
-
-	// Optionally, you can also call session.Options.MaxAge = -1 to delete the session cookie
-	session.Options.MaxAge = -1
-
-	// Save the session
-	err = session.Save(r, w)
-	if err != nil {
-		http.Error(w, "Failed to save session: "+err.Error(), http.StatusInternalServerError)
-		return
-	}
-
+	// Set CORS headers first
 	origin := r.Header.Get("Origin")
 	if origin == "https://"+api.FRONTEND_DOMAIN || origin == "https://www."+api.FRONTEND_DOMAIN {
 		w.Header().Set("Access-Control-Allow-Origin", origin)
@@ -266,8 +227,43 @@ func (api *apiConfig) logoutHandler(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 
-	// Send a success response or redirect the user
+	// Get the session
+	session, err := store.Get(r, "session-name")
+	if err != nil {
+		http.Error(w, "Failed to get session", http.StatusInternalServerError)
+		return
+	}
+
+	// Get the user ID from the session
+	userIDInterface, ok := session.Values["userID"]
+	if !ok {
+		http.Error(w, "User not authenticated", http.StatusUnauthorized)
+		return
+	}
+	userID, ok := userIDInterface.(int64)
+	if !ok {
+		http.Error(w, "Invalid user ID in session", http.StatusInternalServerError)
+		return
+	}
+
+	// Delete the user's tokens in the database
+	err = api.DB.DeleteAuthTokens(context.Background(), userID)
+	if err != nil {
+		http.Error(w, "Failed to delete tokens", http.StatusInternalServerError)
+		return
+	}
+
+	// Invalidate and delete the session
+	session.Options.MaxAge = -1
+	session.Values = make(map[interface{}]interface{})
+	err = session.Save(r, w)
+	if err != nil {
+		http.Error(w, "Failed to invalidate session", http.StatusInternalServerError)
+		return
+	}
+
+	// Send a success response
 	w.Header().Set("Content-Type", "application/json")
 	w.WriteHeader(http.StatusOK)
-	w.Write([]byte(`{"message":"Logged out successfully"}`))
+	json.NewEncoder(w).Encode(map[string]string{"message": "Logged out successfully"})
 }
