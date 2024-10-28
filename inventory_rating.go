@@ -64,7 +64,6 @@ func validateWeaponDefinitions(weapons []WeaponDefinition) error {
 		if weapon.Rank < 1 {
 			return fmt.Errorf("weapon '%s' has invalid rank '%d'", weapon.WeaponName, weapon.Rank)
 		}
-		// Add more validation rules as needed
 	}
 	return nil
 }

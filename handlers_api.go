@@ -104,7 +104,7 @@ func (api *apiConfig) handleCallback(w http.ResponseWriter, r *http.Request) {
 	}
 
 	// Redirect the user back to the frontend
-	http.Redirect(w, r, "https://www.d2loot.com/dashboard", http.StatusFound)
+	http.Redirect(w, r, "https://www."+api.FRONTEND_DOMAIN+"/dashboard", http.StatusFound)
 }
 
 func (api *apiConfig) userDataHandler(w http.ResponseWriter, r *http.Request) {
@@ -191,7 +191,7 @@ func (api *apiConfig) userDataHandler(w http.ResponseWriter, r *http.Request) {
 
 	// Set CORS headers (adjust as needed)
 	origin := r.Header.Get("Origin")
-	if origin == "https://d2loot.com" || origin == "https://www.d2loot.com" {
+	if origin == "https://"+api.FRONTEND_DOMAIN || origin == "https://www."+api.FRONTEND_DOMAIN {
 		w.Header().Set("Access-Control-Allow-Origin", origin)
 		w.Header().Set("Access-Control-Allow-Credentials", "true")
 		w.Header().Set("Access-Control-Allow-Headers", "Content-Type")

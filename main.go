@@ -20,11 +20,12 @@ import (
 )
 
 type apiConfig struct {
-	DB            *database.Queries
-	ManifestDB    *sql.DB
-	API_KEY       string
-	CLIENT_ID     string
-	CLIENT_SECRET string
+	DB              *database.Queries
+	ManifestDB      *sql.DB
+	API_KEY         string
+	CLIENT_ID       string
+	CLIENT_SECRET   string
+	FRONTEND_DOMAIN string
 }
 
 var oauth2Config *oauth2.Config
@@ -47,6 +48,7 @@ func main() {
 	redirectURL := os.Getenv("REDIRECT_URL")
 	sessionKey := os.Getenv("SESSION_KEY")
 	apiKey := os.Getenv("API_KEY")
+	frontendDomain := os.Getenv("FRONTEND_DOMAIN")
 
 	if clientID == "" || clientSecret == "" || redirectURL == "" || sessionKey == "" || apiKey == "" {
 		log.Fatal("Missing required environment variables")
@@ -65,9 +67,10 @@ func main() {
 
 	// Initialize apiConfig
 	apiCfg := apiConfig{
-		API_KEY:       apiKey,
-		CLIENT_ID:     clientID,
-		CLIENT_SECRET: clientSecret,
+		API_KEY:         apiKey,
+		CLIENT_ID:       clientID,
+		CLIENT_SECRET:   clientSecret,
+		FRONTEND_DOMAIN: frontendDomain,
 	}
 
 	// Set up database connection if needed
@@ -91,7 +94,7 @@ func main() {
 
 	// Set session options for security
 	store.Options = &sessions.Options{
-		Domain:   ".d2loot.com",
+		Domain:   "." + frontendDomain,
 		Path:     "/",
 		MaxAge:   86400 * 7,             // 7 days
 		HttpOnly: true,                  // Prevents JS access to cookies
@@ -108,7 +111,7 @@ func main() {
 	router := chi.NewRouter()
 
 	router.Use(cors.Handler(cors.Options{
-		AllowedOrigins:   []string{"https://www.d2loot.com/"}, // Your frontend's origin
+		AllowedOrigins:   []string{"https://www." + frontendDomain + "/"}, // Your frontend's origin
 		AllowedMethods:   []string{"GET", "POST", "OPTIONS"},
 		AllowedHeaders:   []string{"Content-Type", "Authorization"},
 		ExposedHeaders:   []string{"Link"},
